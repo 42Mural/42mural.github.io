@@ -1,0 +1,1 @@
+// Main Script of 42 Mural Webpage
