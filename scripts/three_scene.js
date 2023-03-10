@@ -26,11 +26,15 @@ const sizes = {
 })*/
 
 // Geometry
-const planet_geometry = new THREE.SphereGeometry(1,15,15);
+const planet_geometry = new THREE.SphereGeometry(1,12,12);
 const planet_material = new THREE.MeshNormalMaterial({color: 0xff0000})
 planet_material.wireframe = true
 const planet = new THREE.Mesh(planet_geometry, planet_material)
 scene.add(planet) // Añadimos la malla del cubo a la escena
+
+const torus_geo = new THREE.TorusGeometry(6,3,15,30)
+const torus = new THREE.Mesh(torus_geo, planet_material)
+scene.add(torus)
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
@@ -54,6 +58,7 @@ const anim = () =>
 	// Update objects
 	planet.rotation.y += 0.001
 	planet.rotation.x += 0.001
+	torus.rotation.z += 0.001
 
 	//Renderer
 	renderer.render(scene, camera)
