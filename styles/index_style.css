@@ -17,6 +17,7 @@
 	--met_col: #ff0000;
 	--bg_col: rgb(219, 219, 219);
 	--title_col: rgb(61, 61, 61);
+	--btn_textcol: rgb(65, 65, 65);
 }
 
 * {
@@ -57,7 +58,7 @@ body {
 .col_decor div {
 	height: 15px;
 	width: 15px;
-	//background-color: blueviolet;
+	/*background-color: blueviolet;*/
 	position: fixed;
 }
 
@@ -83,4 +84,44 @@ body {
 	font-family: 'Archivo Bold';
 	font-size: 4rem;
 	color: var(--title_col);
+}
+
+.org_button {
+	position: absolute;
+	width: 180px;
+	height: 30px;
+	text-decoration: none;
+	color: var(--btn_textcol);
+	padding: 2px;
+	padding-bottom: 1px;
+	border: 1px solid var(--btn_textcol);
+	border-radius: 5px;
+	display: inline-block;
+	margin: 0 0 0 10%;
+	bottom: 20%;
+}
+
+.btn_content {
+	margin: 2px;
+}
+
+.btn_content div {
+	display: inline-block;
+	position: absolute;
+}
+
+.org_logo {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: #874ea0;
+	margin: 2px;
+	background-image: url(../res/imgs/42muralogo.jpg);
+	background-size: cover;
+	border-radius: 5px;
+}
+
+.btn_text {
+	position: relative;
+	margin-left: 30px;
 }
