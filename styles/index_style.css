@@ -16,6 +16,7 @@
 	--atl_col: #78d7b6;
 	--met_col: #ff0000;
 	--bg_col: rgb(219, 219, 219);
+	--title_col: rgb(61, 61, 61);
 }
 
 * {
@@ -49,6 +50,7 @@ body {
 .col_decor {
 	height: 15px;
 	width: 55px;
+	margin: 10% 10% 0 10%;
 	/*background-color: bisque;*/
 }
 
@@ -71,4 +73,14 @@ body {
 .square3 {
 	background-color: var(--met_col);
 	margin-left: 40px;
+}
+
+.title {
+	margin: -2% 10% 0 10%;
+}
+
+.title h1 {
+	font-family: 'Archivo Bold';
+	font-size: 4rem;
+	color: var(--title_col);
 }
