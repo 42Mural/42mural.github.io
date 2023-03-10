@@ -25,6 +25,10 @@
 	font-family: 'Archivo';
 }
 
+body {
+	background-color: var(--bg_col);
+}
+
 .planet_scene {
 	position: fixed;
 	top: 0;
@@ -39,4 +43,32 @@
 	height: 100%;
 	width: 40%;
 	background-color: var(--bg_col);
+	padding: 15px;
+}
+
+.col_decor {
+	height: 15px;
+	width: 55px;
+	/*background-color: bisque;*/
+}
+
+.col_decor div {
+	height: 15px;
+	width: 15px;
+	//background-color: blueviolet;
+	position: fixed;
+}
+
+.square1 {
+	background-color: var(--atl_col);
+}
+
+.square2 {
+	background-color: var(--wak_col);
+	margin-left: 20px;
+}
+
+.square3 {
+	background-color: var(--met_col);
+	margin-left: 40px;
 }
