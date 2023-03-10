@@ -88,7 +88,7 @@ body {
 
 .org_button {
 	position: absolute;
-	width: 180px;
+	width: 170px;
 	height: 30px;
 	text-decoration: none;
 	color: var(--btn_textcol);
@@ -99,6 +99,8 @@ body {
 	display: inline-block;
 	margin: 0 0 0 10%;
 	bottom: 20%;
+	background-color: var(--bg_col);
+	transition: background-color .3s, color .3s;
 }
 
 .btn_content {
@@ -124,4 +126,9 @@ body {
 .btn_text {
 	position: relative;
 	margin-left: 30px;
+}
+
+.org_button:hover {
+	background-color: rgb(94, 43, 94);
+	color: aliceblue;
 }
