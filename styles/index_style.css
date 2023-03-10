@@ -31,6 +31,9 @@ body {
 	background-color: var(--bg_col);
 }
 
+@media screen and (min-width: 775px)
+{
+
 .planet_scene {
 	position: fixed;
 	top: 0;
@@ -131,4 +134,112 @@ body {
 .org_button:hover {
 	background-color: rgb(94, 43, 94);
 	color: aliceblue;
+}
+}
+
+@media screen and (max-width: 775px)
+{
+
+	.planet_scene {
+		position: fixed;
+		top: 0;
+		left: 0;
+		outline: none;
+		height: 300px;
+	}
+	
+	.main_content {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 40%;
+		background-color: var(--bg_col);
+		padding: 15px;
+	}
+	
+	.col_decor {
+		height: 15px;
+		width: 55px;
+		margin: 10% 10% 0 10%;
+		/*background-color: bisque;*/
+	}
+	
+	.col_decor div {
+		height: 15px;
+		width: 15px;
+		/*background-color: blueviolet;*/
+		position: fixed;
+	}
+	
+	.square1 {
+		background-color: var(--atl_col);
+	}
+	
+	.square2 {
+		background-color: var(--wak_col);
+		margin-left: 20px;
+	}
+	
+	.square3 {
+		background-color: var(--met_col);
+		margin-left: 40px;
+	}
+	
+	.title {
+		margin: -2% 10% 0 10%;
+	}
+	
+	.title h1 {
+		font-family: 'Archivo Bold';
+		font-size: 4rem;
+		color: var(--title_col);
+	}
+	
+	.org_button {
+		position: absolute;
+		width: 170px;
+		height: 30px;
+		text-decoration: none;
+		color: var(--btn_textcol);
+		padding: 2px;
+		padding-bottom: 1px;
+		border: 1px solid var(--btn_textcol);
+		border-radius: 5px;
+		display: inline-block;
+		margin: 0 0 0 10%;
+		bottom: 20%;
+		background-color: var(--bg_col);
+		transition: background-color .3s, color .3s;
+	}
+	
+	.btn_content {
+		margin: 2px;
+	}
+	
+	.btn_content div {
+		display: inline-block;
+		position: absolute;
+	}
+	
+	.org_logo {
+		position: relative;
+		width: 20px;
+		height: 20px;
+		background-color: #874ea0;
+		margin: 2px;
+		background-image: url(../res/imgs/42muralogo.jpg);
+		background-size: cover;
+		border-radius: 5px;
+	}
+	
+	.btn_text {
+		position: relative;
+		margin-left: 30px;
+	}
+	
+	.org_button:hover {
+		background-color: rgb(94, 43, 94);
+		color: aliceblue;
+	}
 }
