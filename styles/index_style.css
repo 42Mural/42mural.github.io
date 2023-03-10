@@ -1,21 +1,42 @@
 /* Main Stylesheet of 42 Mural */
-/* Color Vars */
+/* Font faces */
+@font-face {
+	font-family: 'Archivo Bold';
+	src: url(../res/fonts/ArchivoNarrow-Bold.ttf);
+}
 
+@font-face {
+	font-family: 'Archivo';
+	src: url(../res/fonts/ArchivoNarrow-Regular.ttf);
+}
+
+/* Color Vars */
 :root{
 	--wak_col: #874ea0;
 	--atl_col: #78d7b6;
 	--met_col: #ff0000;
+	--bg_col: rgb(219, 219, 219);
 }
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	font-family: 'Archivo';
 }
 
-.planet_scene{
+.planet_scene {
 	position: fixed;
 	top: 0;
 	left: 0;
 	outline: none;
+}
+
+.main_content {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 40%;
+	background-color: var(--bg_col);
 }
