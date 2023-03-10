@@ -10,7 +10,7 @@ const sizes = {
 }
 
 // Resize events
-/*window.addEventListener('resize', () => 
+window.addEventListener('resize', () => 
 {
 	// Update sizes
 	sizes.width = window.innerWidth
@@ -23,7 +23,7 @@ const sizes = {
 	// Update renderer
 	renderer.setSize(sizes.width, sizes.height)
 	renderer.setPixelRatio(Math.min(window.devicePixelRatio), 2)
-})*/
+})
 
 // Geometry
 const planet_geometry = new THREE.SphereGeometry(1,12,12);
