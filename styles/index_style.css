@@ -1,3 +1,12 @@
+/* Main Stylesheet of 42 Mural */
+/* Color Vars */
+
+:root{
+	--wak_col: #874ea0;
+	--atl_col: #78d7b6;
+	--met_col: #ff0000;
+}
+
 *{
 	margin: 0;
 	padding: 0;
